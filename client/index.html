@@ -70,7 +70,7 @@
 
                         <div class="card-content">
                             <p>Subject: {{product.subject}}</p>
-                            <p>Price: {{product.price}}$</p>
+                            <p>Price: {{product.Courseprice}}$</p>
                             <p>Location: {{product.location}}</p>
                             <p> Available Spaces: {{product.availableInventory - cartCount(product.id) }}</p>
                             <button class="btn waves-effect waves-light" v-on:click='addToCart(product)'
@@ -100,7 +100,7 @@
 
                     <p>
                         <strong for="phone">Phone:</strong>
-                        <input type="tel" v-model.number='order.phone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        <input type="tel" v-model.number='order.phone' 
                             placeholder="Enter Your Phone Number" id="phone" name="phone" required>
                     </p>
                     <button class="btn waves-effect waves-light" v-on:click='showCheckout' name="action">Back
@@ -130,7 +130,7 @@
 
                             <div class="card-content">
                                 <p>Subject: {{product.subject}}</p>
-                                <p>Price: {{product.price}}$</p>
+                                <p>Price: {{product.Courseprice}}$</p>
                                 <p>Location: {{product.location}}</p>
                                 <button class="btn waves-effect waves-light"
                                     v-on:click='deleteFromCart(product,MyCartProducts)'>Remove Item
@@ -149,7 +149,7 @@
   
     <script src="https://unpkg.com/vue"></script>
 
-    
+
    <script>
        var webstore = new Vue({
     el: '#app',
@@ -182,7 +182,7 @@
                     id: product.id,
                     subject: product.subject,
                     title: product.title,
-                    price: product.price,
+                    Courseprice: product.Courseprice,
                     location: product.location,
                     image: product.image,
                     availableInventory: tempNo,
@@ -206,7 +206,7 @@
                     id: product.id,
                     subject: product.subject,
                     title: product.title,
-                    price: product.price,
+                    Courseprice: product.Courseprice,
                     location: product.location,
                     image: product.image,
                     availableInventory: tempNo,
@@ -327,9 +327,9 @@
         },
         sortProductsByPrice() {
             function compare(a, b) {
-                if (a.price > b.price)
+                if (a.Courseprice > b.Courseprice)
                     return 1;
-                if (a.price < b.price)
+                if (a.Courseprice < b.Courseprice)
                     return -1;
                 return 0;
             }
