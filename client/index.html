@@ -70,7 +70,7 @@
 
                         <div class="card-content">
                             <p>Subject: {{product.subject}}</p>
-                            <p>Price: {{product.Courseprice}}$</p>
+                            <p> Price : {{product.Courseprice}}$</p>
                             <p>Location: {{product.location}}</p>
                             <p> Available Spaces: {{product.availableInventory - cartCount(product.id) }}</p>
                             <button class="btn waves-effect waves-light" v-on:click='addToCart(product)'
