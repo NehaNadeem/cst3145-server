@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Character set configuration -->
+
 <meta charset="UTF-8">
 <title>CW 2 - Neha Assignment</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Viewport configuration, scaling options -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- Material Icon & Open Sans Font -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--Import Materialize CSS Stylesheet-->
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
-<!-- Font Awesome icon -->
+<link type="text/css" rel="stylesheet" href="css/style.min.css" />
 <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     rel="stylesheet">
 
@@ -71,7 +67,7 @@
                             <p>Subject: {{product.subject}}</p>
                             <p> Price : {{product.Courseprice}}$</p>
                             <p>Location: {{product.location}}</p>
-                            <p> Available Spaces: {{product.availableInventory - cartCount(product.id) }}</p>
+                            <p> Available Items: {{product.availableInventory - cartCount(product.id) }}</p>
                             <button class="btn waves-effect waves-light" v-on:click='addToCart(product)'
                                 v-if='canAddToCart(product)'>Add to cart</button>
 
@@ -89,7 +85,7 @@
 
             <div v-else>
                 <h2>Checkout Page</h2>
-                <!-- Start Order Form Code  -->
+                <!-- Starting Code of Order Form-->
                 <form @submit="postOrder">
                     <p>
                         <strong for="Name">Name:</strong>
@@ -111,9 +107,9 @@
                     </button>
 
                 </form>
-                <!-- End Order Form Code  -->
+                <!-- Ending Code of Order Form  -->
 
-                <!-- Start Shopping Cart Inside Checkout Page   -->
+                <!-- Starting Shopping Cart Inside Checkout Page   -->
                 <br>
                 <h1 style="text-align: center;">Shopping Cart Page</h1>
                 <br>
@@ -139,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Shopping Cart Inside Checkout Page   -->
+                <!-- Ending Shopping Cart -->
 
 
         </main>
@@ -153,7 +149,7 @@
        var webstore = new Vue({
     el: '#app',
     data: {
-        sitename: 'Neha Assignment - CW 2',
+        sitename: 'Neha Assignment : CW 2',
         products: [],
         cart: [],
         globalCheckAsecOrDesc: 'asec',
