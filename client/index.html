@@ -3,7 +3,7 @@
 
 <!-- Character set configuration -->
 <meta charset="UTF-8">
-<title>MDX CW 2 - Individual</title>
+<title>CW 2 - Neha Assignment</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Viewport configuration, scaling options -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,17 +24,16 @@
 
 
             <br>
-            <h5>Sort by</h5>
+            <h5>Sort By
             <button class="btn waves-effect waves-light" v-on:click='sortProductsByPrice()'>Sort By Price</button>
             <button class="btn waves-effect waves-light" v-on:click='sortProductsByTitle'>Sort By Title</button>
             <button class="btn waves-effect waves-light" v-on:click='sortProductsByLocation'>Sort By Location</button>
             <button class="btn waves-effect waves-light" v-on:click='sortProductsBySubject'>Sort By Subject</button>
-            <button class="btn waves-effect waves-light" v-on:click='sortProductsByAvailablity'>Sort By
-                Availablity</button>
-            <br>
+            <button class="btn waves-effect waves-light" v-on:click='sortProductsByAvailablity'>Sort By Availablity</button>
+            <br></h5>
 
             <div class="row">
-                <h5>Order by</h5>
+                <h5>Order by
                 <label>
                     <input name="group1" id="one" value="asec" type="radio" v-model="globalCheckAsecOrDesc" checked />
                     <span>Ascending</span>
@@ -43,7 +42,7 @@
                 <label>
                     <input name="group1" id="two" value="desc" type="radio" v-model="globalCheckAsecOrDesc" />
                     <span>Descending</span>
-                </label>
+                </label></h5>
             </div>
 
             <button class="btn waves-effect waves-light" v-on:click='showCheckout' v-if="enableShoppingCart">
@@ -154,7 +153,7 @@
        var webstore = new Vue({
     el: '#app',
     data: {
-        sitename: 'CW 2 - Individual Assignment ',
+        sitename: 'Neha Assignment - CW 2 ',
         products: [],
         cart: [],
         globalCheckAsecOrDesc: 'asec',

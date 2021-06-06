@@ -20,7 +20,6 @@ const MongoClient = require("mongodb").MongoClient
  
 let db;
  
-//MongoClient.connect("mongodb+srv://mdxDb:Hello123009@cluster0.6kvby.mongodb.net",(err, client) => {
     MongoClient.connect(" mongodb+srv://neha:neha123@cluster0.ntnuv.mongodb.net",(err, client) => {
    
     db = client.db('webstoredb')
@@ -59,8 +58,7 @@ res.send(results.ops)
 // return with object id 
 
 const ObjectID = require('mongodb').ObjectID;
-app.get('/collection/:collectionName/:id'
-, (req, res, next) => {
+app.get('/collection/:collectionName/:id', (req, res, next) => {
 req.collection.findOne({ _id: new ObjectID(req.params.id) }, (e, result) => {
 if (e) return next(e)
 res.send(result)
@@ -80,9 +78,6 @@ if (e) return next(e)
 res.send((result.result.n === 1) ? {msg: 'success'} : {msg: 'error'})
 })
 })
-
-
-
 
 
 app.delete('/collection/:collectionName/:id', (req, res, next) => {
