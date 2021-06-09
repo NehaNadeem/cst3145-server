@@ -60,8 +60,8 @@ body{
 	opacity: 0.7;
 }
 .sortBtn{
-  background-color: #4CAF50; /* Green */
-  border: 1px solid green;
+  background-color: black; 
+  border: 1px solid black;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -70,11 +70,11 @@ body{
   cursor: pointer;
 }
 .sortBtn:hover{
-	background-color: #3e8e41;
+	background-color: black;
 }
 .submitbtn{
-	background-color: #4CAF50; /* Green */
-	border: 1px solid green;
+	background-color: black;
+	border: 1px solid black;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -83,5 +83,5 @@ body{
 	cursor: pointer;
 }
 .submitBtn:hover{
-	background-color: #3e8e41;
+	background-color: black;
 }

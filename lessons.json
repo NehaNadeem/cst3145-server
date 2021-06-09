@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "60bbc42f30cfcb4a43e07023"
+  },
+  "id": 1001,
+  "subject": "English",
+  "title": "Learning Basics Eng ",
+  "location": "Jeddah",
+  "image": "assets/1.jpg",
+  "availableInventory": 2,
+  "availability": 1,
+  "rating": 4,
+  "Courseprice": 30
+},{
+  "_id": {
+    "$oid": "60bbc47430cfcb4a43e07024"
+  },
+  "id": 1002,
+  "subject": "Computer",
+  "title": "Learning Basics Computer",
+  "location": "Jeddah",
+  "image": "assets/2.jpg",
+  "availableInventory": 3,
+  "availability": 2,
+  "rating": 4,
+  "Courseprice": 140
+},{
+  "_id": {
+    "$oid": "60bbc8105588f41ec4519d2e"
+  },
+  "id": 1003,
+  "subject": "Science",
+  "title": "Learning Basics Science",
+  "location": "Riyadh",
+  "image": "assets/4.jpg",
+  "availableInventory": 0,
+  "availability": 0,
+  "rating": 4,
+  "Courseprice": 99
+},{
+  "_id": {
+    "$oid": "60bbce0a5588f41ec4519d2f"
+  },
+  "id": 1004,
+  "subject": "Maths ",
+  "title": "Learning Basics Maths ",
+  "location": "Khobar",
+  "image": "assets/3.jpg",
+  "availableInventory": 3,
+  "availability": 5,
+  "rating": 4,
+  "Courseprice": 30
+},{
+  "_id": {
+    "$oid": "60bbd3ce5588f41ec4519d36"
+  },
+  "id": 1006,
+  "subject": "Arts ",
+  "title": "Learning Basics ",
+  "location": "Khobar",
+  "image": "assets/5.jpg",
+  "availableInventory": 6,
+  "availability": 6,
+  "rating": 4,
+  "Courseprice": 20
+},{
+  "_id": {
+    "$oid": "60bc267a5588f41ec4519d37"
+  },
+  "id": 1007,
+  "subject": "Biology ",
+  "title": "Learning Basics ",
+  "location": "Jeddah",
+  "image": "assets/6.jpg",
+  "availableInventory": 8,
+  "availability": 8,
+  "rating": 5,
+  "Courseprice": 120
+},{
+  "_id": {
+    "$oid": "60bc26a95588f41ec4519d38"
+  },
+  "id": 1008,
+  "subject": "P.E ",
+  "title": "Learning Basics ",
+  "location": "Jeddah",
+  "image": "assets/7.jpg",
+  "availableInventory": 2,
+  "availability": 4,
+  "rating": 5,
+  "Courseprice": 10
+}]
